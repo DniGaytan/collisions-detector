@@ -1,0 +1,41 @@
+[
+  {
+    "frame_id": 1,
+    "filename": "images/forklift2888.jpg",
+    "objects": [
+      {
+        "class_id": 1,
+        "name": "Person",
+        "relative_coordinates": {
+          "center_x": 0.262095,
+          "center_y": 0.439941,
+          "width": 0.032657,
+          "height": 0.159686
+        },
+        "confidence": 0.981679
+      },
+      {
+        "class_id": 1,
+        "name": "Person",
+        "relative_coordinates": {
+          "center_x": 0.592683,
+          "center_y": 0.431341,
+          "width": 0.050544,
+          "height": 0.198288
+        },
+        "confidence": 0.959561
+      },
+      {
+        "class_id": 0,
+        "name": "forklift",
+        "relative_coordinates": {
+          "center_x": 0.161254,
+          "center_y": 0.427378,
+          "width": 0.147227,
+          "height": 0.249657
+        },
+        "confidence": 0.994833
+      }
+    ]
+  }
+]

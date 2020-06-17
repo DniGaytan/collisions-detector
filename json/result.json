@@ -1,0 +1,63 @@
+[
+  {
+    "frame_id": 1,
+    "filename": "images/forklift2050.jpg",
+    "objects": [
+      {
+        "class_id": 1,
+        "name": "Person",
+        "relative_coordinates": {
+          "center_x": 0.795513,
+          "center_y": 0.439303,
+          "width": 0.022515,
+          "height": 0.130264
+        },
+        "confidence": 0.972571
+      },
+      {
+        "class_id": 1,
+        "name": "Person",
+        "relative_coordinates": {
+          "center_x": 0.85841,
+          "center_y": 0.28283,
+          "width": 0.017199,
+          "height": 0.077926
+        },
+        "confidence": 0.744405
+      },
+      {
+        "class_id": 1,
+        "name": "Person",
+        "relative_coordinates": {
+          "center_x": 0.824971,
+          "center_y": 0.296818,
+          "width": 0.016091,
+          "height": 0.084515
+        },
+        "confidence": 0.705122
+      },
+      {
+        "class_id": 1,
+        "name": "Person",
+        "relative_coordinates": {
+          "center_x": 0.835819,
+          "center_y": 0.293523,
+          "width": 0.017439,
+          "height": 0.081824
+        },
+        "confidence": 0.664141
+      },
+      {
+        "class_id": 0,
+        "name": "forklift",
+        "relative_coordinates": {
+          "center_x": 0.720908,
+          "center_y": 0.401383,
+          "width": 0.07033,
+          "height": 0.156456
+        },
+        "confidence": 0.99874
+      }
+    ]
+  }
+]

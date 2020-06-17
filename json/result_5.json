@@ -1,0 +1,10 @@
+[
+{
+ "frame_id":1, 
+ "filename":"images/forklift2809.jpg", 
+ "objects": [ 
+  {"class_id":1, "name":"Person", "relative_coordinates":{"center_x":0.413446, "center_y":0.544067, "width":0.070261, "height":0.245951}, "confidence":0.988166}, 
+  {"class_id":0, "name":"forklift", "relative_coordinates":{"center_x":0.594417, "center_y":0.251276, "width":0.112460, "height":0.253596}, "confidence":0.999186}
+ ] 
+}
+]
