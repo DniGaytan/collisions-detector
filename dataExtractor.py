@@ -49,7 +49,11 @@ class dataExtractor:
             h = (tag_info[2][3] * 1080)
             x_min = (tag_info[2][0] * 1920) - (w / 2)
             y_max = (tag_info[2][1] * 1080) - (h / 2)
-            processed_data.append([str(tag_info[0]), x_min, y_max, w, h])
+            if "person" in str(tag_info[0]):
+                tag_name = "person"
+            else:
+                tag_name = "forklift"
+            processed_data.append([tag_name, x_min, y_max, w, h])
         return processed_data
 
 
