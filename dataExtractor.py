@@ -41,6 +41,17 @@ class dataExtractor:
                 processed_data.append(processed_img)
         return processed_data
 
+    def processRawData(self, data_list=None):
+        processed_data = []
+        for tag in data_list:
+            tag_info = list(tag)
+            w = (tag_info[2][2] * 1920)
+            h = (tag_info[2][3] * 1080)
+            x_min = (tag_info[2][0] * 1920) - (w / 2)
+            y_max = (tag_info[2][1] * 1080) - (h / 2)
+            processed_data.append([str(tag_info[0]), x_min, y_max, w, h])
+        return processed_data
+
 
 de = dataExtractor(outputJsonPath='json')
 de.processImgSet()
