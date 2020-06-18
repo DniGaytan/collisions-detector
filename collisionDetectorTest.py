@@ -1,6 +1,7 @@
 import collisionDetector as cd
 import coordsProcessor as cp
 import dataExtractor as de
+import sys
 
 
 class Test:
@@ -30,10 +31,10 @@ class Test:
         ]
     ]
 
-    def run(self):
+    def run(self, detections):
         print("working on testcases")
         dataExtractor = de.dataExtractor(outputJsonPath='json')
-        self.testcases += (dataExtractor.processImgSet())
+        self.testcases += (dataExtractor.processRawData(detections))
         for testcase in self.testcases:
             print('Testcase: ', testcase)
             coordinates_processor = cp.CoordinatesProcessor(testcase)
@@ -44,5 +45,6 @@ class Test:
             print('result: ', collision_detector.processSamples(), end='\n \n \n')
 
 
-test = Test()
-test.run()
+if __name__ == '__main__':
+    test = Test()
+    test.run(sys.argv[1])
